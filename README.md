@@ -1,4 +1,5 @@
-###友盟分享
+
+### 友盟分享
 6.9.4版本----------------------------2019-01-07
 
 [sdk下载](https://www.umeng.com/social)
@@ -11,8 +12,8 @@
 qq和微博的回调需要再Activity级别的onActivityResult中调用
   UMShareAPI.get(this).onActivityResult(requestCode, resultCode, data);
 
-###Android Manifest XML配置
-####新浪
+### Android Manifest XML配置
+#### 新浪
 
 	   <activity
 	        android:name="com.umeng.socialize.media.WBShareCallBackActivity"
@@ -39,7 +40,7 @@ qq和微博的回调需要再Activity级别的onActivityResult中调用
 	
 	    </activity>
 
-####微信
+#### 微信
 
 	 <activity
 	            android:name=".wxapi.WXEntryActivity"
@@ -48,8 +49,7 @@ qq和微博的回调需要再Activity级别的onActivityResult中调用
 	            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
 
-####QQ 
-注意appid要和项目对应
+#### QQ 注意appid要和项目对应
 
 	     <activity
 	        android:name="com.tencent.tauth.AuthActivity"
@@ -72,7 +72,7 @@ qq和微博的回调需要再Activity级别的onActivityResult中调用
 
 
 
-###权限
+### 权限
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -80,9 +80,9 @@ qq和微博的回调需要再Activity级别的onActivityResult中调用
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 
-##友盟的初始化
+## 友盟的初始化
 
-###Application的onCreate下
+### Application的onCreate下
 
         UMConfigure.init(this,"5a12384aa40fa3551f0001d1"
                 ,"umeng",UMConfigure.DEVICE_TYPE_PHONE,"");//5a12384aa40fa3551f0001d1是项目在友盟平台上获取的唯一appkey
